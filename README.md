@@ -1,6 +1,6 @@
 # 🚗 Vehiql – AI-Powered Car Marketplace
 
-A modern car marketplace built with **Next.js** that allows users to explore cars, compare vehicle details, save favorites, calculate monthly EMI payments, and book test drives.
+Vehiql is a modern car marketplace built with **React.js** that allows users to explore cars, compare vehicle details, save favorites, calculate monthly EMI payments, and book test drives.
 
 🌐 **Live Website:** https://vehiql-tau.vercel.app/
 
@@ -14,12 +14,12 @@ A modern car marketplace built with **Next.js** that allows users to explore car
 - 🔐 **Authentication** – Secure sign-up and sign-in using Clerk.
 - 🛠️ **Admin Dashboard** – Manage vehicle listings, bookings, and dealership settings.
 - 🖼️ **Image Storage** – Manage vehicle images using Supabase Storage.
-- 🤖 **AI Integration** – Integrate AI-powered functionality using Google Gemini.
-- 🛡️ **Security** – Protect the application with Arcjet security features.
+- 🤖 **AI Integration** – AI-powered functionality using Google Gemini.
+- 🛡️ **Security** – Application protection using Arcjet.
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** Next.js 15, React 19
+- **Frontend:** React.js
 - **Styling:** Tailwind CSS
 - **UI Components:** Radix UI, Lucide React
 - **Authentication:** Clerk
@@ -28,17 +28,16 @@ A modern car marketplace built with **Next.js** that allows users to explore car
 - **Storage:** Supabase
 - **AI:** Google Gemini
 - **Security:** Arcjet
-- **Validation:** Zod, React Hook Form
+- **Form Handling & Validation:** React Hook Form, Zod
+- **Deployment:** Vercel
 
 ## 🌐 Live Demo
 
-Check out the live application:
+Explore the live application:
 
 👉 https://vehiql-tau.vercel.app/
 
 ## ⚙️ Installation and Setup
-
-Follow these steps to run the project locally.
 
 ### 1. Clone the Repository
 
@@ -55,7 +54,7 @@ npm install
 
 ### 3. Configure Environment Variables
 
-Create a `.env` file in the root directory and add your credentials:
+Create a `.env` file in the root directory and add your service credentials:
 
 ```env
 DATABASE_URL="your_postgresql_connection_string"
@@ -72,13 +71,9 @@ GEMINI_API_KEY="your_gemini_api_key"
 ARCJET_KEY="your_arcjet_key"
 ```
 
-Replace the placeholder values with your actual credentials from the respective service providers.
-
-**Important:** Never upload your `.env` file or secret API keys to GitHub.
+Replace the placeholder values with your actual credentials. Never upload your `.env` file or secret API keys to GitHub.
 
 ### 4. Set Up the Database
-
-Generate Prisma Client and synchronize the database schema:
 
 ```bash
 npx prisma generate
@@ -102,7 +97,7 @@ http://localhost:3000
 ```text
 Vehiql/
 ├── actions/          # Server actions and application logic
-├── app/              # Next.js application routes and pages
+├── app/              # Application routes and pages
 │   ├── (admin)/      # Admin dashboard
 │   ├── (auth)/       # Authentication pages
 │   ├── (main)/       # Main marketplace pages
@@ -118,19 +113,19 @@ Vehiql/
 
 ## 🚀 Deployment
 
-The application is deployed using Vercel.
+The application is deployed on Vercel.
 
 To deploy your own version:
 
 1. Push your project to GitHub.
 2. Import the repository into Vercel.
-3. Configure the required environment variables.
+3. Configure all required environment variables.
 4. Connect your PostgreSQL database and Supabase project.
-5. Deploy the application and verify its functionality.
+5. Deploy and test the application.
 
 ## 🔒 Security
 
-- Keep secret keys and database credentials private.
+- Keep API keys and database credentials private.
 - Configure authentication and authorization properly.
 - Restrict admin access to authorized users.
 - Configure database permissions and storage policies securely.
@@ -151,6 +146,6 @@ No license has been specified yet. Add a `LICENSE` file if you intend to distrib
 
 ---
 
-**Built with ❤️ using Next.js and modern web technologies.**
+**Built with ❤️ using React.js and modern web technologies.**
 
 🌐 **Live Demo:** https://vehiql-tau.vercel.app/
